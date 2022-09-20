@@ -1,0 +1,16 @@
+#!/bin/bash
+#SBATCH --chdir /scratch/kilian/out/conf_B/C6H4_C6H4_test/
+#SBATCH --nodes 1
+#SBATCH --ntasks 1
+#SBATCH --cpus-per-task 1
+#SBATCH --mem 4096
+#SBATCH --time 01:00:00 
+
+module load gcc/8.4.0 
+module load mvapich2/2.3.4 
+module load quantum-espresso
+
+echo STARTING AT `date`
+name="C6H4_C6H4"
+pp.x -i /home/kilian/C3MP/simulations/avg/conf_B/${name}_test/${name}_pp.in > /scratch/kilian/out/conf_B/${name}_test/${name}_pp.out
+echo FINISHED at `date`
