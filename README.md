@@ -25,7 +25,7 @@ Once this is completed, see src/in/submit_band_plots.run to get your output file
 see /src/pdos/submit_pdos.run. For this you'll need to create config files for your materials, i'll upload mine as examples shortly.
 
 ### vacuum potential
-these submission files can be found 
+these submission files can be found in the src/avg folder. Example config files coming shortly (email me if they're still not there when you need them).
 
 ## jupyter notebooks for analysis
 In the folder src/ can be found most of the jupyter notebooks that I used for analysis throughout the course of the project. src/plot_bands.ipynb and src/plot_bands_pdos.ipynb are two notebooks used for plotting the band structure of a material after DFT calculations have been run, and plotting the band structure with partial density of states, respectively. In each case I added several helper functions to make the plotting process easier and to give the user more control. In certain cases there may be some things that are hardcoded and can be adjusted to be passed as arguments to functions.
